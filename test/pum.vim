@@ -80,10 +80,10 @@ function! s:suite.format_item() abort
   call s:assert.equals(
         \ pum#_format_item({'word': 'foo', 'kind': 'bar', 'menu': 'baz'},
         \ ['abbr', 'kind', 'menu'], 3, 3, 3),
-        \ 'foo bar baz')
+        \ ' foo bar baz ')
 
   call s:assert.equals(
         \ pum#_format_item({'word': 'foo', 'kind': 'bar', 'menu': 'baz'},
         \ ['menu', 'abbr', 'kind'], 3, 3, 3),
-        \ 'baz foo bar')
+        \ ' baz foo bar ')
 endfunction

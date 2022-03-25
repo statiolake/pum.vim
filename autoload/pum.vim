@@ -608,7 +608,7 @@ function! pum#_format_item(item, orders, max_abbr, max_kind, max_menu) abort
     endif
   endfor
 
-  return str
+  return ' ' . str . ' '
 endfunction
 
 function! s:print_error(string) abort
